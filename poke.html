@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="poke.js"></script>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-image: url("./img/desk.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .box{
+            width: 1000px;
+            height: 600px;
+            background-image: url("./img/desk.jpg");
+            margin: auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+
+        }
+        .poke{
+            width: 90px;
+            height: 120px;
+            background: #8e9397;
+            position: absolute;
+            left: 350px;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            border: 2px solid #006633;
+
+        }
+        .active{
+            border: 2px solid #4cd964;
+        }
+        button{
+            width: 60px;
+            height: 30px;
+            border: none;
+            outline: none;
+            background: #bcb31b;
+            color: #fff;
+            border-radius: 10px;
+            position: absolute;
+            left:390px;
+            bottom: 50px;
+        }
+        .leftBtn{
+            left:550px
+        }
+        .game{
+            font-size: 30px;
+            color:#000000;
+
+        }
+        body span{
+            display: block;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<span class="game">纸牌游戏，和为14即可消除。</span>
+<div class="box" >
+    <button class="rightBtn">发牌</button>
+    <button class="leftBtn">收牌</button>
+</div>
+</body>
+</html>
